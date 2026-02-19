@@ -1,0 +1,8 @@
+﻿mainMenu.obj : error LNK2019: unresolved external symbol InitWindow referenced in function main
+mainMenu.obj : error LNK2019: unresolved external symbol WindowShouldClose referenced in function main
+mainMenu.obj : error LNK2019: unresolved external symbol ClearBackground referenced in function main
+mainMenu.obj : error LNK2019: unresolved external symbol BeginDrawing referenced in function main
+mainMenu.obj : error LNK2019: unresolved external symbol EndDrawing referenced in function main
+mainMenu.obj : error LNK2019: unresolved external symbol DrawRectangle referenced in function main
+mainMenu.obj : error LNK2019: unresolved external symbol DrawText referenced in function main
+C:\Users\USER\Documents\Нова папка (2)\Pixel_Storm\main\x64\Debug\main.exe : fatal error LNK1120: 7 unresolved externals
