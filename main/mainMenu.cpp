@@ -47,6 +47,33 @@ void showTimeline(Node* head) {
     }
 }
 
+void SortByYear(Node*& head) {
+    Node* sorted = nullptr;
+
+    while (head) 
+    {
+        Node* current = head;
+        head = head->next;
+        if (!sorted || current->data.year < sorted->data.year) 
+        {
+            current->next = sorted;
+            sorted = current;
+        }
+        else 
+        {
+            Node* temp = sorted;
+            while (temp->next && temp->next->data.year < current->data.year) 
+            {
+                temp = temp->next;
+            }
+            current->next = temp->next;
+            temp->next = current;
+        }
+    }
+    head = sorted;
+}
+
+
 int main() {
     int screenWidth = 1366;
     int screenHeight = 768;
