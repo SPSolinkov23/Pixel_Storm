@@ -3,14 +3,23 @@
 #include "raylib.h"
 #include <string>	
 using namespace std;
+
+struct Line {
+    struct Event {
+        int year;
+        string name;
+        string type; 
+        string result; 
+	};
+};
+
 struct Event {
     int year;
     string name;
     string type; 
     string result; 
-
-
 };
+
 struct Node {
     Event data;
     Node* next;
@@ -72,6 +81,8 @@ void SortByYear(Node*& head) {
     }
     head = sorted;
 }
+
+
 
 
 int main() {
