@@ -6,8 +6,8 @@ using namespace std;
 struct Event {
     int year;
     string name;
-    string type; //битка,мир/създаване на държава
-    string result; //победа загуба неутрално
+    string type; 
+    string result; 
 
 
 };
@@ -93,8 +93,8 @@ int main() {
     while (running && !WindowShouldClose()) {
         int buttonX = screenWidth / 2 - buttonWidth / 2;
         int newY = screenHeight / 2;
-        int loadY = (int)(screenHeight * 0.4);
-        int exitY = (int)(screenHeight * 0.3);
+        int loadY = (int)(screenHeight * 0.6);
+        int exitY = (int)(screenHeight * 0.7);
 
 
         int inputBoxW = 600;
@@ -198,10 +198,10 @@ int main() {
         ClearBackground(BLUE);
 
         if (!newStoryMode && !timelineMode) {
-            DrawText("Welcome to Storyliner", screenWidth / 2 - 100, screenHeight / 2 - 50, 20, BLACK);
+            DrawText("Welcome to Storyliner", screenWidth / 2 - 275, screenHeight / 4, 50, BLACK);
 
             DrawRectangle(buttonX, newY, buttonWidth, buttonHeight, DARKBLUE);
-            DrawText("New Story", screenWidth / 2 - 50, newY + 10, 20, BLACK);
+            DrawText("New Story", screenWidth / 2 - 50, newY + 20, 20, BLACK);
 
             DrawRectangle(buttonX, loadY, buttonWidth, buttonHeight, ORANGE);
             DrawText("Load Story", screenWidth / 2 - 50, loadY + 10, 20, BLACK);
